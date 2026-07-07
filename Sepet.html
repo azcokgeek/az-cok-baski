@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Az Çok Baskı - Sepet</title>
+    <link rel="icon" href="images/açb-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">
+</head>
+<body style="background-image: url(images/background.png);">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="AzÇokBaskı.html"><img id="logo" src="images\başlık1.png" alt="Az çok Baskı Logo"></a>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="Kupa.html">Kupa</a></li>
+                <li class="nav-item"><a class="nav-link" href="Tişört.html">Tişört</a></li>
+                <li class="nav-item"><a class="nav-link" href="Ajanda.html">Ajanda</a></li>
+                <li class="nav-item"><a class="nav-link" href="İletişim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="Hakkımızda.html">Hakkımızda</a></li>
+                <li class="nav-item clock" id="clock"></li>
+                <li class="nav-item cart-icon">
+                    <a href="Sepet.html" class="nav-link"><i class="bi bi-basket2-fill"></i></a>
+
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <section class="container mt-5">
+                    <div class="cart-confirmation">
+                        <div class="cart-body">
+                            <h2 class="cart-title">Sipariş Onayı</h2>
+                            <form id="order-form">
+                                <div class="form-group">
+                                    <label for="name">Adı ve Soyadı:</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Kart Numarası:</label>
+                                    <input type="number" id="card-number" name="card-number" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Son Kullanma Tarihi:</label>
+                                    <input type="date" id="date" name="date" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">CVC:</label>
+                                    <input type="number" id="cvc" name="cvc" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Adresiniz:</label>
+                                    <textarea id="address" name="address" class="form-control" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="image">Görsel Ekleyin:</label>
+                                    <input type="file" id="image" name="image" class="form-control-file">
+                                </div>
+                                <button type="button" class="btn btn-success" onclick="confirmOrder()">Siparişi Onayla</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="order-confirmation" class="mt-3" style="display: none;">
+                <div class="alert alert-success" role="alert">
+                    <h2 class="alert-heading">Sipariş Onaylandı</h2>
+                    <p>Teşekkür ederiz! Siparişiniz onaylandı.</p>
+                </div>
+                <div id="order-confirmation-message"></div>
+            </div>
+            
+        </section>  
+        <footer>
+            Az Çok baskı 2023
+        </footer>
+        <script src="sepet.js"></script>
+        <script src="saat.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<body>
+<html>

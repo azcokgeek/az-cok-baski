@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Az Çok Baskı - Kupa</title>
+    <link rel="icon" href="images/açb-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">
+</head>
+<body style="background-image: url(images/background.png);">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="AzÇokBaskı.html"><img id="logo" src="images\başlık1.png" alt="Az çok Baskı Logo"></a>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="Kupa.html">Kupa</a></li>
+                <li class="nav-item"><a class="nav-link" href="Tişört.html">Tişört</a></li>
+                <li class="nav-item"><a class="nav-link" href="Ajanda.html">Ajanda</a></li>
+                <li class="nav-item"><a class="nav-link" href="İletişim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="Hakkımızda.html">Hakkımızda</a></li>
+                <li class="nav-item clock" id="clock"></li>
+                    <a href="Sepet.html" class="nav-link"><i class="bi bi-basket2-fill"></i></a>
+
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="cart">
+            <h2>Sepet</h2>
+            <ul id="cart-items" data-remove="remove-product">
+            </ul>
+            <p class="total">Toplam: ₺<span id="total-price">0</span></p>
+            <div class="buy-button-container">
+                <button onclick="location.href='sepet.html'" class="buy-button">Satın Al</button>
+            </div>
+          </div>
+      </section>
+        <div class="product-list">
+            <ul>
+                <li>
+                    <div class="product">
+                        <img src="images/kupa-beyaz.jpg" alt="Kişiye Özel Kupa Beyaz">
+                        <h3>Kişiye Özel Kupa Beyaz</h3> 
+                        <p>75₺</p> 
+                        <button class="add-to-cart" onclick="addToCart('Kişiye Özel Kupa Beyaz', 75)">Sepete Ekle</button>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div class="product">
+                        <img src="images/kupa-siyah.jpg" alt="Kişiye Özel Kupa Siyah">
+                        <h3>Kişiye Özel Kupa Siyah</h3>
+                        <p>100₺</p>
+                        <button class="add-to-cart" onclick="addToCart('Kişiye Özel Kupa Siyah', 100)">Sepete Ekle</button>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div class="product">
+                        <img src="images/sihirli-kupa-tasarimi.jpg" alt="Kişiye Özel Sihirli Kupa">
+                        <h3>Kişiye Özel Sihirli Kupa</h3>
+                        <p>125₺</p>
+                        <button class="add-to-cart" onclick="addToCart('Kişiye Özel Sihirli Kupa', 125)">Sepete Ekle</button>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div class="product">
+                        <img src="images/kalpkupa.jpg" alt="Kişiye Özel Kalp Kulplu Kupa">
+                        <h3>Kişiye Özel Kalp Kulplu Kupa</h3>
+                        <p>100₺</p>
+                        <button class="add-to-cart" onclick="addToCart('Kişiye Özel Kalp Kulplu Kupa', 100)">Sepete Ekle</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            Az Çok baskı 2023
+        </footer>
+    <script src="sepet.js"></script>
+    <script src="saat.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
